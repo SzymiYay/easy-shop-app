@@ -1,0 +1,92 @@
+[
+  {
+    "client": {
+      "name": "ANDRZEJ",
+      "surname": "KOWALSKI",
+      "age": 20,
+      "money": 25000
+    },
+    "basket": [
+      {
+        "name": "laptop",
+        "type": "ELECTRONICS",
+        "price": 2400
+      },
+      {
+        "name": "laptop",
+        "type": "ELECTRONICS",
+        "price": 2400
+      },
+      {
+        "name": "phone",
+        "type": "ELECTRONICS",
+        "price": 2400
+      },
+      {
+        "name": "Pan Tadeusz",
+        "type": "BOOKS",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "client": {
+      "name": "ANDRZEJ",
+      "surname": "GRABARZ",
+      "age": 20,
+      "money": 250
+    },
+    "basket": [
+      {
+        "name": "tv",
+        "type": "ELECTRONICS",
+        "price": 999
+      },
+      {
+        "name": "nintendo",
+        "type": "ELECTRONICS",
+        "price": 20
+      },
+      {
+        "name": "Krzyzacy",
+        "type": "BOOKS",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "client": {
+      "name": "JAKUB",
+      "surname": "NOWAK",
+      "age": 45,
+      "money": 500000
+    },
+    "basket": [
+      {
+        "name": "TV",
+        "type": "ELECTRONICS",
+        "price": 5500
+      },
+      {
+        "name": "car",
+        "type": "MOTORIZATION",
+        "price": 240000
+      }
+    ]
+  },
+  {
+    "client": {
+      "name": "JAN",
+      "surname": "WISNIEWSKI",
+      "age": 10,
+      "money": 150
+    },
+    "basket": [
+      {
+        "name": "phone",
+        "type": "ELECTRONICS",
+        "price": 1200
+      }
+    ]
+  }
+]
