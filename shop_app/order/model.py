@@ -11,3 +11,19 @@ from typing import Any
 class Order:
     client: Client
     basket: Basket
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> 'Order':
+        for p in data['basket']:
+            p['price'] = Decimal(p['price'])
+            p['type'] = ProductType[p['type']]
+
+        order = Order(**data)
+
+        order.client = Client(**data['client'])
+        order.basket = Basket(data['basket'])
+
+        for i, p in enumerate(order.basket.items):
+            order.basket.items[i] = Product(**p)
+
+        return order
