@@ -1,4 +1,4 @@
-from shop_app.data_loader.orders_loader import convert_orders, get_orders
+from shop_app.data_loader.orders_loader import _convert_orders, get_orders
 from shop_app.data_loader.json.json_service import load_from_json
 from shop_app.order.service import OrdersService
 from shop_app.order.product.model import ProductType
@@ -15,7 +15,7 @@ class TestOrdersService(unittest.TestCase):
     def setUpClass(cls) -> None:
         orders_data = load_from_json('shop_app/data/orders.json')
         orders = get_orders(orders_data)
-        cls.os = OrdersService(convert_orders(orders))
+        cls.os = OrdersService(_convert_orders(orders))
 
     def test_get_client_with_greatest_payment(self):
         result = self.os.get_client_with_greatest_payment()
