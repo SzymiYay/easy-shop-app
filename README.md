@@ -20,16 +20,19 @@ I plan to add a database layer and UI (FastAPI, Flask).
 
 ## Getting Started
 1. Clone the repo
+
    ```sh
    git clone https://github.com/SzymiYay/easy-shop-app
    ```
 2. To start the project, you need to have Python and Poetry installed on your computer.
 3. Set on the project directory.
 4. Run application:
+
    ```sh
    poetry run pyhton -m shop_app
    ```
 5. Run tests:
+
    ```sh
    pytest
    ```
